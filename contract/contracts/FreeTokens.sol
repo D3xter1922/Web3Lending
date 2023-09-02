@@ -9,9 +9,14 @@ contract FreeTokens is Ownable{
     IERC20 public lendingToken;
 
 
+    constructor(address _one, address _two){
+        collateralToken=IERC20(_one);
+        lendingToken=IERC20(_two);
+    }
+
 
     function GetFreeTokens() public {
-        collateralToken.transfer(msg.sender, 10000000*10**18);
-        lendingToken.transfer(msg.sender, 10000000*10**18);
+        collateralToken.transfer(msg.sender, 10000*10**18);
+        lendingToken.transfer(msg.sender, 10000*10**18);
     }
 }
