@@ -40,6 +40,13 @@ async function main() {
   console.log(
     `CustomLending deployed to ${CustomLending.target}`
   );
+  const FreeTokens = await hre.ethers.deployContract("FreeTokens",[collateralTokenAddress,lendingTokenAddress]);
+
+  await FreeTokens.waitForDeployment();
+
+  console.log(
+    `FreeTokens deployed to ${FreeTokens.target}`
+  );
 
   // // Deploy the contract
   // const CustomLending = await hre.ethers.getContractFactory("CustomLending");
