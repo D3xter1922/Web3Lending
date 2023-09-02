@@ -97,7 +97,7 @@ This is a decentralized finance (DeFi) application for borrowing and lending dig
 
 ## Documentation
 
-- [Smart Contract Architecture](conract/contracts/CustomLending.sol)
+- [Smart Contract Architecture](contract/contracts/CustomLending.sol)
 
 - This contract enables users to lend, borrow, payback and withdraw CASH. For borrowing, the player must have enough GOLD in their wallet as a collateral. The rate of borrowing is fixed as 50% per day and the rate of lending is fixed as 10% per day. Maximum interest is capped at 50% of the principle amount for borrowing and 10% of the principle amount for lending.
 - Future works include:
