@@ -1342,13 +1342,14 @@ function App() {
     <div className="container text-center">
        <div className="row">
          <div className="col">
-           <h1>Hello</h1>
+           <h1>lending demo</h1>
+          <h3>Demo created by members of group D for the course Blockchain applications in finance</h3>
          </div>
        </div>
        <div className="row">
          <div className="col">
            <h1>Info and cheats</h1>
-           <p>Gold Balance: {gold}</p>
+           <p>Asset Balance: {gold}</p>
            <p>Cash Balance: {cash}</p>
            <p>Amount Lent: {lentAmount}</p>
            <form>
